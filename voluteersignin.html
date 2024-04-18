@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Sign In Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.1); 
+        }
+    </style>
 </head>
 <body>
     <!--VOLUNTEER PAGE-->
     <div class="container">
-        <div class="auth-form">
-            <h2>Volunteer Connect</h2>
+        <h2 class="text-center">Login</h2>
 
-            <section id="signin-section">
-                <h3>Sign In</h3>
-                <form id="signin-form">
-                    <div class="form-group">
-                        <label for="signin-email">Email:</label>
-                        <input type="email" id="signin-email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signin-password">Password:</label>
-                        <input type="password" id="signin-password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign In</button>
-                    <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
-                </form>
-            </section>
-
-            <section id="signup-section" style="display: none;">
-                <h3>Sign Up</h3>
-                <form id="signup-form">
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                    <p>Already a member? <a href="#" id="signin-link">Sign In inn</a></p>
-                </form>
-            </section>
-        </div> 
+        <form>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <p class="text-center mt-2">
+                Don't have an account? <a href="voluteersignup.html">Sign up</a>
+            </p>
+        </form>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
